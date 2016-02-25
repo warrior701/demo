@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stub>
+
+	<case id="/user/userRegister" name="1.1 用户注册">
+		<params>
+			<param id="mobileNo" name="手机号码" need="1" />
+			<param id="validateCode" name="手机验证码" need="1" />
+		</params>
+		<result>
+			{
+			"responseCode": "100000",
+			"message": "请求成功",
+			"result": {
+			"userId": "XXXXXX"
+			}
+			}
+		</result>
+	</case>
+	<case id="/water/recharge/history" name="6.1 查询水费历史缴费记录">
+		<params>
+			<param id="userId" name="用户编号" need="1" />
+		</params>
+		<result>
+			{
+			"responseCode" : "100000",
+			"message" : "操作成功",
+			"result" : [ {
+			"wr_code" : "WZ85662001",
+			"wr_city" : "杭州",
+			"wr_company" : "中和水利有限公司",
+			"op_time" : "2015-11-09"
+			}, {
+			"wr_code" : "WZ85662002",
+			"wr_city" : "杭州",
+			"wr_company" : "中和水利有限公司2",
+			"op_time" : "2015-11-10"
+			} ]
+			}
+		</result>
+	</case>
+
+</stub>
